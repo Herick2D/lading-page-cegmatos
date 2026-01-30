@@ -1,0 +1,102 @@
+{
+  "meta": {
+    "title": "CEGMATOS - Ingeniería de Aire Acondicionado",
+    "description": "Más de 25 años de experiencia en ingeniería de aire acondicionado, ventilación y extracción mecánica."
+  },
+  "nav": {
+    "home": "Inicio",
+    "about": "Nosotros",
+    "services": "Servicios",
+    "portfolio": "Proyectos",
+    "contact": "Contacto"
+  },
+  "hero": {
+    "tagline": "Más de 25 años de experiencia",
+    "title": "Ingeniería de Aire Acondicionado",
+    "subtitle": "que transforma ambientes",
+    "description": "Soluciones confiables en climatización, ventilación y extracción mecánica con innovación continua y eficiencia energética.",
+    "cta": "Solicitar Presupuesto",
+    "ctaSecondary": "Conocer Servicios",
+    "certified": "Certificado",
+    "yearsExp": "Años de",
+    "experience": "Experiencia"
+  },
+  "about": {
+    "label": "Quiénes Somos",
+    "title": "Misión y Visión",
+    "text": "Proporcionamos soluciones confiables en ingeniería de aire acondicionado, combinando más de 25 años de experiencia técnica con innovación continua. Nuestro diferencial está en el análisis minucioso de las demandas específicas de cada proyecto, garantizando eficiencia energética, sostenibilidad y atención precisa a las necesidades del cliente.",
+    "features": [
+      "Eficiencia Energética",
+      "Sostenibilidad",
+      "Atención Personalizada"
+    ],
+    "stats": {
+      "years": {
+        "value": "25+",
+        "label": "Años de Experiencia"
+      },
+      "projects": {
+        "value": "500+",
+        "label": "Proyectos Realizados"
+      },
+      "commitment": {
+        "value": "100%",
+        "label": "Compromiso"
+      }
+    }
+  },
+  "services": {
+    "label": "Qué Hacemos",
+    "title": "Nuestros Servicios",
+    "subtitle": "Soluciones completas en ingeniería de climatización",
+    "learnMore": "Saber más",
+    "items": [
+      {
+        "title": "Proyectos",
+        "description": "Elaboramos proyectos detallados de sistemas de aire acondicionado, ventilación y extracción mecánica, enfocados en la optimización del rendimiento y sostenibilidad.",
+        "icon": "blueprint"
+      },
+      {
+        "title": "Instalaciones",
+        "description": "Ejecutamos la instalación integral de sistemas HVAC utilizando equipos de alta tecnología y proveedores certificados.",
+        "icon": "install"
+      },
+      {
+        "title": "Consultoría",
+        "description": "Realizamos evaluaciones completas con enfoque en análisis de eficiencia operacional, diagnóstico técnico y propuestas de mejora.",
+        "icon": "consult"
+      },
+      {
+        "title": "Mantenimiento",
+        "description": "Servicios de mantenimiento preventivo y correctivo garantizando seguridad, confiabilidad y prolongación de la vida útil de los equipos.",
+        "icon": "maintenance"
+      }
+      ,
+      {
+        "title": "Extracción y Ventilación",
+        "description": "Desarrollamos sistemas de renovación de aire y control de contaminantes para entornos críticos, empleando tecnologías eficientes y fiables.",
+        "icon": "ventilation"
+      }
+    ]
+  },
+  "portfolio": {
+    "label": "Portafolio",
+    "title": "Nuestros Proyectos",
+    "subtitle": "Conoce algunos de nuestros trabajos realizados"
+  },
+  "cta": {
+    "title": "¿Listo para transformar tu ambiente?",
+    "subtitle": "Contáctanos y solicita un presupuesto personalizado",
+    "button": "Hablar por WhatsApp"
+  },
+  "footer": {
+    "description": "Ingeniería de Aire Acondicionado con más de 25 años transformando ambientes con excelencia e innovación.",
+    "contact": "Contacto",
+    "links": "Enlaces Útiles",
+    "social": "Redes Sociales",
+    "copyright": "© 2024 CEGMATOS. Todos los derechos reservados."
+  },
+  "whatsapp": {
+    "defaultMessage": "¡Hola! Me gustaría solicitar un presupuesto."
+  }
+}

@@ -1,0 +1,102 @@
+{
+  "meta": {
+    "title": "CEGMATOS - Engenharia de Ar Condicionado",
+    "description": "Mais de 25 anos de expertise em engenharia de ar condicionado, ventilação e exaustão mecânica."
+  },
+  "nav": {
+    "home": "Início",
+    "about": "Sobre",
+    "services": "Serviços",
+    "portfolio": "Projetos",
+    "contact": "Contato"
+  },
+  "hero": {
+    "tagline": "Mais de 25 anos de expertise",
+    "title": "Engenharia de Ar Condicionado",
+    "subtitle": "que transforma ambientes",
+    "description": "Soluções confiáveis em climatização, ventilação e exaustão mecânica com inovação contínua e eficiência energética.",
+    "cta": "Solicitar Orçamento",
+    "ctaSecondary": "Conhecer Serviços",
+    "certified": "Certificado",
+    "yearsExp": "Anos de",
+    "experience": "Experiência"
+  },
+  "about": {
+    "label": "Quem Somos",
+    "title": "Missão & Visão",
+    "text": "Fornecemos soluções confiáveis em engenharia de ar condicionado, combinando mais de 25 anos de experiência técnica com inovação contínua. Nosso diferencial está na análise minuciosa das demandas específicas de cada projeto, garantindo eficiência energética, sustentabilidade e atendimento preciso às necessidades do cliente.",
+    "features": [
+      "Eficiência Energética",
+      "Sustentabilidade",
+      "Atendimento Personalizado"
+    ],
+    "stats": {
+      "years": {
+        "value": "25+",
+        "label": "Anos de Experiência"
+      },
+      "projects": {
+        "value": "500+",
+        "label": "Projetos Realizados"
+      },
+      "commitment": {
+        "value": "100%",
+        "label": "Compromisso"
+      }
+    }
+  },
+  "services": {
+    "label": "O que fazemos",
+    "title": "Nossos Serviços",
+    "subtitle": "Soluções completas em engenharia de climatização",
+    "learnMore": "Saiba mais",
+    "items": [
+      {
+        "title": "Projetos",
+        "description": "Elaboramos projetos detalhados de sistemas de ar condicionado, ventilação e exaustão mecânica, focando na otimização do desempenho e sustentabilidade.",
+        "icon": "blueprint"
+      },
+      {
+        "title": "Instalações",
+        "description": "Executamos a instalação integral de sistemas HVAC utilizando equipamentos de alta tecnologia e fornecedores certificados.",
+        "icon": "install"
+      },
+      {
+        "title": "Consultoria",
+        "description": "Realizamos avaliações completas com foco em análise de eficiência operacional, diagnóstico técnico e proposição de melhorias.",
+        "icon": "consult"
+      },
+      {
+        "title": "Manutenção",
+        "description": "Serviços de manutenção preventiva e corretiva garantindo segurança, confiabilidade e prolongamento da vida útil dos equipamentos.",
+        "icon": "maintenance"
+      }
+      ,
+      {
+        "title": "Exaustão e Ventilação",
+        "description": "Desenvolvemos sistemas de renovação do ar e controle de contaminantes para ambientes críticos, com tecnologias eficientes e confiáveis.",
+        "icon": "ventilation"
+      }
+    ]
+  },
+  "portfolio": {
+    "label": "Portfólio",
+    "title": "Nossos Projetos",
+    "subtitle": "Conheça alguns dos nossos trabalhos realizados"
+  },
+  "cta": {
+    "title": "Pronto para transformar seu ambiente?",
+    "subtitle": "Entre em contato e solicite um orçamento personalizado",
+    "button": "Falar no WhatsApp"
+  },
+  "footer": {
+    "description": "Engenharia de Ar Condicionado com mais de 25 anos transformando ambientes com excelência e inovação.",
+    "contact": "Contato",
+    "links": "Links Úteis",
+    "social": "Redes Sociais",
+    "copyright": "© 2024 CEGMATOS. Todos os direitos reservados."
+  },
+  "whatsapp": {
+    "defaultMessage": "Olá! Gostaria de solicitar um orçamento."
+  }
+}

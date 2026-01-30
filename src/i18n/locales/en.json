@@ -1,0 +1,102 @@
+{
+  "meta": {
+    "title": "CEGMATOS - Air Conditioning Engineering",
+    "description": "Over 25 years of expertise in air conditioning engineering, ventilation and mechanical exhaust."
+  },
+  "nav": {
+    "home": "Home",
+    "about": "About",
+    "services": "Services",
+    "portfolio": "Projects",
+    "contact": "Contact"
+  },
+  "hero": {
+    "tagline": "Over 25 years of expertise",
+    "title": "Air Conditioning Engineering",
+    "subtitle": "that transforms spaces",
+    "description": "Reliable solutions in air conditioning, ventilation and mechanical exhaust with continuous innovation and energy efficiency.",
+    "cta": "Request a Quote",
+    "ctaSecondary": "Explore Services",
+    "certified": "Certified",
+    "yearsExp": "Years of",
+    "experience": "Experience"
+  },
+  "about": {
+    "label": "Who We Are",
+    "title": "Mission & Vision",
+    "text": "We provide reliable solutions in air conditioning engineering, combining over 25 years of technical experience with continuous innovation. Our differential lies in the meticulous analysis of the specific demands of each project, ensuring energy efficiency, sustainability and precise attention to the client's needs.",
+    "features": [
+      "Energy Efficiency",
+      "Sustainability",
+      "Personalized Service"
+    ],
+    "stats": {
+      "years": {
+        "value": "25+",
+        "label": "Years of Experience"
+      },
+      "projects": {
+        "value": "500+",
+        "label": "Projects Completed"
+      },
+      "commitment": {
+        "value": "100%",
+        "label": "Commitment"
+      }
+    }
+  },
+  "services": {
+    "label": "What We Do",
+    "title": "Our Services",
+    "subtitle": "Complete solutions in climate engineering",
+    "learnMore": "Learn more",
+    "items": [
+      {
+        "title": "Projects",
+        "description": "We develop detailed projects for air conditioning, ventilation and mechanical exhaust systems, focusing on performance optimization and sustainability.",
+        "icon": "blueprint"
+      },
+      {
+        "title": "Installations",
+        "description": "We perform complete installation of HVAC systems using high-tech equipment and certified suppliers.",
+        "icon": "install"
+      },
+      {
+        "title": "Consulting",
+        "description": "We conduct comprehensive assessments focusing on operational efficiency analysis, technical diagnosis and improvement proposals.",
+        "icon": "consult"
+      },
+      {
+        "title": "Maintenance",
+        "description": "Preventive and corrective maintenance services ensuring safety, reliability and extended equipment lifespan.",
+        "icon": "maintenance"
+      }
+      ,
+      {
+        "title": "Exhaust & Ventilation",
+        "description": "We develop air renewal and contaminant-control systems for critical environments, using efficient and reliable technologies.",
+        "icon": "ventilation"
+      }
+    ]
+  },
+  "portfolio": {
+    "label": "Portfolio",
+    "title": "Our Projects",
+    "subtitle": "Discover some of our completed work"
+  },
+  "cta": {
+    "title": "Ready to transform your space?",
+    "subtitle": "Get in touch and request a personalized quote",
+    "button": "Chat on WhatsApp"
+  },
+  "footer": {
+    "description": "Air Conditioning Engineering with over 25 years transforming spaces with excellence and innovation.",
+    "contact": "Contact",
+    "links": "Quick Links",
+    "social": "Social Media",
+    "copyright": "© 2024 CEGMATOS. All rights reserved."
+  },
+  "whatsapp": {
+    "defaultMessage": "Hello! I would like to request a quote."
+  }
+}
