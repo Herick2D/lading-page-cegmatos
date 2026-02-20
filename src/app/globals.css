@@ -263,6 +263,10 @@ h6 {
   background: #1a1a1a;
 }
 
+/* Hide scrollbar but keep scrollability */
+.no-scrollbar::-webkit-scrollbar { display: none; }
+.no-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
+
 /* ==========================================
    Selection
    ========================================== */
