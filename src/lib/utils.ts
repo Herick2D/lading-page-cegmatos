@@ -18,7 +18,7 @@ export const CONTACT = {
   phoneDisplay: "(21) 97007-5287",
   phoneFixed: "(21) 3079-2165",
   email: "eduardo@cegmatos.com.br",
-  email2: "eduardo2@cegmatos.com.br",
+  email2: "cegmatos.09@gmail.com",
   emailSecondary: "beatriz@cegmatos.com.br",
   instagram: "cegmatosarcondicionado",
   instagramUrl: "https://instagram.com/cegmatosarcondicionado",
