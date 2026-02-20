@@ -84,6 +84,11 @@
     "title": "Nuestros Proyectos",
     "subtitle": "Conoce algunos de nuestros trabajos realizados"
   },
+  "clients": {
+    "label": "Nuestros Clientes",
+    "title": "Empresas que Confían en Nosotros",
+    "subtitle": "Orgullosos de atender a grandes empresas y proyectos de referencia en todo Brasil."
+  },
   "cta": {
     "title": "¿Listo para transformar tu ambiente?",
     "subtitle": "Contáctanos y solicita un presupuesto personalizado",

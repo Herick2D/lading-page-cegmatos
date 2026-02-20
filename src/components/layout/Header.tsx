@@ -70,7 +70,7 @@ export function Header() {
             <img
               src="/images/logo-oficial.png"
               alt="Cegmatos"
-              className="w-auto max-h-14 sm:max-h-16 object-contain flex-shrink-0"
+              className="w-auto max-h-14 sm:max-h-16 object-contain flex-shrink-0 scale-[1.2]"
             />
         </Link>
         

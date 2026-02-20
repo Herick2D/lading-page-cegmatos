@@ -36,6 +36,7 @@ export interface Translations {
     }>;
   };
   portfolio: Record<string, string>;
+  clients: Record<string, string>;
   cta: Record<string, string>;
   footer: Record<string, string>;
   whatsapp: Record<string, string>;

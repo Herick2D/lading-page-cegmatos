@@ -1,7 +1,7 @@
 "use client";
 
 import { useI18n } from "@/i18n";
-import { AirWavesIcon, CheckIcon } from "@/components/ui/icons";
+import { CheckIcon } from "@/components/ui/icons";
 
 const COLORS = {
   navy: "#003266",
@@ -34,32 +34,46 @@ export function AboutSection() {
       <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-center">
 
-          <div className="relative">
+          <div className="relative flex flex-col gap-4">
+            {/* Logo panel */}
             <div
-              className="rounded-2xl md:rounded-3xl overflow-hidden shadow-xl"
+              className="rounded-2xl md:rounded-3xl overflow-hidden shadow-2xl flex items-center justify-center"
               style={{
-                background: "linear-gradient(135deg, #e8f4fc 0%, #d4edfc 100%)",
+                background: "linear-gradient(135deg, #003266 0%, #004a94 60%, #00ACDB 100%)",
                 aspectRatio: "4/3",
               }}
             >
-              <div className="absolute inset-0 flex items-center justify-center">
-                <AirWavesIcon className="w-32 h-32 md:w-48 md:h-48 opacity-30" variant="watermark" />
-              </div>
-              <div className="absolute inset-0 flex items-center justify-center">
-                <span className="text-gray-400 text-sm md:text-base">Imagem Institucional</span>
-              </div>
+              {/* Decorative subtle grid overlay */}
+              <div
+                className="absolute inset-0 opacity-10"
+                style={{
+                  backgroundImage:
+                    "repeating-linear-gradient(0deg,transparent,transparent 39px,rgba(255,255,255,0.4) 39px,rgba(255,255,255,0.4) 40px), repeating-linear-gradient(90deg,transparent,transparent 39px,rgba(255,255,255,0.4) 39px,rgba(255,255,255,0.4) 40px)",
+                }}
+              />
+              {/* Glowing circle behind logo */}
+              <div
+                className="absolute w-56 h-56 md:w-72 md:h-72 rounded-full opacity-20 blur-2xl"
+                style={{ background: "#00ACDB" }}
+              />
+              <img
+                src="/images/cegmatos-logo-fonte-branca.png"
+                alt="Cegmatos"
+                className="relative z-10 w-48 sm:w-56 md:w-64 h-auto object-contain drop-shadow-2xl"
+              />
             </div>
 
-            <div className="relative md:absolute md:-bottom-8 md:left-4 md:right-4 lg:left-8 lg:right-8 bg-white rounded-xl md:rounded-2xl shadow-xl p-4 md:p-6 grid grid-cols-3 gap-2 md:gap-4 mt-4 md:mt-0">
+            {/* Stats card */}
+            <div className="bg-white rounded-xl md:rounded-2xl shadow-xl p-4 md:p-6 grid grid-cols-3 gap-2 md:gap-4">
               {stats.map((stat, index) => (
-                <div key={index} className="text-center">
-                  <span 
+                <div key={index} className={`text-center ${index < stats.length - 1 ? "border-r border-gray-100" : ""}`}>
+                  <span
                     className="block text-xl md:text-2xl font-bold"
                     style={{ color: COLORS.navy }}
                   >
                     {stat.value}
                   </span>
-                  <span className="block text-[10px] md:text-xs text-gray-500 leading-tight">
+                  <span className="block text-[10px] md:text-xs text-gray-500 leading-tight mt-0.5">
                     {stat.label}
                   </span>
                 </div>

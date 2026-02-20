@@ -1,7 +1,7 @@
 "use client";
 
 import { useI18n } from "@/i18n";
-import { AirWavesIcon, InstagramIcon, WhatsAppIcon, PhoneIcon, MailIcon } from "@/components/ui/icons";
+import { InstagramIcon, WhatsAppIcon, PhoneIcon, MailIcon } from "@/components/ui/icons";
 import { getWhatsAppLink, CONTACT } from "@/lib/utils";
 
 const COLORS = {
@@ -30,9 +30,12 @@ export function Footer() {
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 md:gap-12 mb-8 md:mb-12">
 
           <div className="sm:col-span-2">
-            <div className="flex items-center gap-3 mb-4">
-              <AirWavesIcon className="w-10 h-10 md:w-12 md:h-12" variant="white" />
-              <span className="text-lg md:text-xl font-bold tracking-wide font-heading">Cegmatos</span>
+            <div className="flex items-center mb-4">
+              <img
+                src="/images/logo-oficial.png"
+                alt="Cegmatos"
+                className="h-14 md:h-16 w-auto object-contain brightness-0 invert"
+              />
             </div>
             <p className="text-gray-300 text-sm leading-relaxed max-w-md">
               {t.footer.description}
@@ -92,6 +95,10 @@ export function Footer() {
               <li className="flex items-start gap-2">
                 <MailIcon className="w-4 h-4 md:w-5 md:h-5 mt-0.5 flex-shrink-0" />
                 <span className="break-all">{CONTACT.email}</span>
+              </li>
+              <li className="flex items-start gap-2">
+                <MailIcon className="w-4 h-4 md:w-5 md:h-5 mt-0.5 flex-shrink-0" />
+                <span className="break-all">{CONTACT.email2}</span>
               </li>
             </ul>
           </div>

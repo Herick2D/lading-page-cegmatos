@@ -1,7 +1,7 @@
 "use client";
 
 import { useI18n } from "@/i18n";
-import { AirWavesIcon, WhatsAppIcon, PhoneIcon, MailIcon } from "@/components/ui/icons";
+import { WhatsAppIcon, PhoneIcon, MailIcon } from "@/components/ui/icons";
 import { getWhatsAppLink, CONTACT } from "@/lib/utils";
 
 const COLORS = {
@@ -27,13 +27,12 @@ export function CTASection() {
       />
 
       <div className="relative z-10 max-w-4xl mx-auto px-4 sm:px-6 text-center">
-        <div 
-          className="w-16 h-16 md:w-20 md:h-20 rounded-xl md:rounded-2xl flex items-center justify-center mx-auto mb-6 md:mb-8 animate-pulse-slow"
-          style={{
-            background: `linear-gradient(135deg, ${COLORS.navy} 0%, ${COLORS.cyan} 100%)`,
-          }}
-        >
-          <AirWavesIcon className="w-10 h-10 md:w-12 md:h-12" variant="white" />
+        <div className="flex justify-center mb-6 md:mb-8">
+          <img
+            src="/images/logo-oficial.png"
+            alt="Cegmatos"
+            className="h-20 md:h-24 w-auto object-contain"
+          />
         </div>
 
         <h2 
@@ -69,12 +68,28 @@ export function CTASection() {
             <span className="text-sm md:text-base">{CONTACT.phoneFixed}</span>
           </a>
           <a
+            href={`tel:${CONTACT.phone}`}
+            className="flex items-center justify-center gap-2 transition-colors hover:opacity-70"
+            style={{ color: "#555555" }}
+          >
+            <PhoneIcon className="w-4 h-4 md:w-5 md:h-5" />
+            <span className="text-sm md:text-base">{CONTACT.phoneDisplay}</span>
+          </a>
+          <a
             href={`mailto:${CONTACT.email}`}
             className="flex items-center justify-center gap-2 transition-colors hover:opacity-70"
             style={{ color: "#555555" }}
           >
             <MailIcon className="w-4 h-4 md:w-5 md:h-5" />
             <span className="text-sm md:text-base">{CONTACT.email}</span>
+          </a>
+          <a
+            href={`mailto:${CONTACT.email2}`}
+            className="flex items-center justify-center gap-2 transition-colors hover:opacity-70"
+            style={{ color: "#555555" }}
+          >
+            <MailIcon className="w-4 h-4 md:w-5 md:h-5" />
+            <span className="text-sm md:text-base">{CONTACT.email2}</span>
           </a>
         </div>
       </div>

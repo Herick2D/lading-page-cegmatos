@@ -2,7 +2,7 @@
 
 import { useState, useEffect, useCallback } from "react";
 import { useI18n } from "@/i18n";
-import { AirWavesIcon, ChevronLeftIcon, ChevronRightIcon } from "@/components/ui/icons";
+import { ChevronLeftIcon, ChevronRightIcon } from "@/components/ui/icons";
 import { cn } from "@/lib/utils";
 import Image from "next/image";
 
@@ -56,15 +56,6 @@ export function PortfolioSection() {
       className="py-16 md:py-24 relative overflow-hidden"
       style={{ backgroundColor: COLORS.navy }}
     >
-      <div className="absolute inset-0 opacity-10">
-        <div className="absolute top-10 left-10 hidden md:block">
-          <AirWavesIcon className="w-48 h-48 lg:w-64 lg:h-64" variant="white" />
-        </div>
-        <div className="absolute bottom-10 right-10 hidden md:block">
-          <AirWavesIcon className="w-48 h-48 lg:w-64 lg:h-64" variant="white" />
-        </div>
-      </div>
-
       <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6">
         <div className="text-center mb-8 md:mb-12">
           <span 
