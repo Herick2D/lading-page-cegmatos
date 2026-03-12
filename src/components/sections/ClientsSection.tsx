@@ -11,7 +11,7 @@ const COLORS = {
 };
 
 // Default number of clients to render. Update as new images are added to /public/clients
-const NUM_CLIENTS = 16;
+const NUM_CLIENTS = 17;
 
 const clients = Array.from({ length: NUM_CLIENTS }, (_, i) => ({
   id: i + 1,

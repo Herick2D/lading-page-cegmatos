@@ -43,18 +43,15 @@ const ServiceIcons: Record<string, ReactElement> = {
   ),
 };
 
-// ---------------------------------------------------------------------------
-// CONFIGURATION — add images to /public/servicos/{serviceKey}/ and adjust counts
-// ---------------------------------------------------------------------------
-const SERVICE_COUNTS: Record<string, { count: number; ext: string }> = {
-  projects:      { count: 3, ext: "jpg" },
-  installations: { count: 4, ext: "JPG" },
-  maintenance:   { count: 3, ext: "jpg" },
-  consultoria:   { count: 3, ext: "JPG" },
-  ventilation:   { count: 3, ext: "jpg" },
+
+const SERVICE_IMAGE_CONFIG: Record<string, { folder: string; prefix: string; count: number; ext: string }> = {
+  projects:      { folder: "projetos",   prefix: "projeto",  count: 3, ext: "png" },
+  installations: { folder: "instalacao", prefix: "instacao", count: 8, ext: "png" },
+  maintenance:   { folder: "manutencao",   prefix: "manutencao", count: 3, ext: "jpg" },
+  consultoria:   { folder: "consultoria",   prefix: "consultoria", count: 0, ext: ""    },
+  ventilation:   { folder: "exaustao",   prefix: "exaustao", count: 4, ext: "png" },
 };
 
-// ---------------------------------------------------------------------------
 export function ServicesPortfolioSection() {
   const { t } = useI18n();
 
@@ -74,12 +71,11 @@ export function ServicesPortfolioSection() {
   const touchDeltaX               = useRef(0);
 
   const svcKey    = services[active].key;
-  const svcCfg    = SERVICE_COUNTS[svcKey] || { count: 0, ext: "jpg" };
+  const svcCfg    = SERVICE_IMAGE_CONFIG[svcKey] || { folder: "", prefix: "", count: 0, ext: "" };
   const images    = Array.from({ length: svcCfg.count }, (_, i) =>
-    `/servicos/${svcKey}/${i + 1}.${svcCfg.ext}`
+    `/servicos/${svcCfg.folder}/${svcCfg.prefix}${i + 1}.${svcCfg.ext}`
   );
 
-  // reset slide with fade when switching service
   const selectService = (i: number) => {
     if (i === active) return;
     setFading(true);
