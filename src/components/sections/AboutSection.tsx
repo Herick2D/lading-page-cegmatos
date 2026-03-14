@@ -59,7 +59,7 @@ export function AboutSection() {
               <img
                 src="/images/cegmatos-logo-fonte-branca.png"
                 alt="Cegmatos"
-                className="relative z-10 w-48 sm:w-56 md:w-64 h-auto object-contain drop-shadow-2xl"
+                className="relative z-10 w-64 sm:w-72 md:w-80 lg:w-[26rem] h-auto object-contain drop-shadow-2xl"
               />
             </div>
 
