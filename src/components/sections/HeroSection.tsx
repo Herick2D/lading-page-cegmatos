@@ -40,16 +40,30 @@ function AnimatedWavesBackground() {
   );
 }
 
+const heroImages = [
+  '/servicos/servico3.jpg',
+  '/servicos/servico4.JPG',
+  '/servicos/servico5.JPG',
+  '/servicos/servico6.JPG',
+  '/servicos/servico7.JPG',
+  '/servicos/servico8.jpg',
+  '/servicos/servico10.jpg',
+  '/servicos/servico11.JPG',
+  '/servicos/servico12.JPG',
+  '/servicos/servico13.JPG',
+  '/servicos/servico14.jpg',
+  '/servicos/servico15.jpg',
+];
+
 export function HeroSection() {
   const { t } = useI18n();
   const whatsappLink = getWhatsAppLink(CONTACT.phone, t.whatsapp.defaultMessage);
   
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
-  const totalImages = 15;
   
   useEffect(() => {
     const interval = setInterval(() => {
-      setCurrentImageIndex((prevIndex) => (prevIndex + 1) % totalImages);
+      setCurrentImageIndex((prevIndex) => (prevIndex + 1) % heroImages.length);
     }, 3000);
     
     return () => clearInterval(interval);
@@ -135,18 +149,22 @@ export function HeroSection() {
                   aspectRatio: "4/3",
                 }}
               >
-                <Image
-                  src={`/servicos/servico${currentImageIndex + 1}.${currentImageIndex === 10 || currentImageIndex === 11 || currentImageIndex === 12 || currentImageIndex === 3 || currentImageIndex === 4 || currentImageIndex === 5 || currentImageIndex === 6 ? 'JPG' : 'jpg'}`}
-                  alt={`Serviço ${currentImageIndex + 1}`}
-                  fill
-                  className="object-cover transition-opacity duration-700"
-                  priority
-                  sizes="(max-width: 768px) 100vw, 50vw"
-                />
+                {heroImages.map((src, i) => (
+                  <Image
+                    key={src}
+                    src={src}
+                    alt={`Serviço ${i + 1}`}
+                    fill
+                    className="object-cover transition-opacity duration-700"
+                    style={{ opacity: i === currentImageIndex ? 1 : 0 }}
+                    sizes="(max-width: 768px) 100vw, 50vw"
+                  />
+                ))}
                 <div 
                   className="absolute inset-0"
                   style={{
                     background: "linear-gradient(to top, rgba(0, 50, 102, 0.3), transparent)",
+                    zIndex: 1,
                   }}
                 />
               </div>

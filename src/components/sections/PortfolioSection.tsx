@@ -11,15 +11,20 @@ const COLORS = {
   cyan: "#00ACDB",
 };
 
-const carouselSlides = Array.from({ length: 15 }, (_, i) => {
-  const imageNumber = i + 1;
-  const extension = [4, 5, 6, 7, 11, 12, 13].includes(imageNumber) ? 'JPG' : 'jpg';
-  
-  return {
-    id: imageNumber,
-    image: `/servicos/servico${imageNumber}.${extension}`,
-  };
-});
+const carouselSlides = [
+  { id: 3,  image: '/servicos/servico3.jpg'  },
+  { id: 4,  image: '/servicos/servico4.JPG'  },
+  { id: 5,  image: '/servicos/servico5.JPG'  },
+  { id: 6,  image: '/servicos/servico6.JPG'  },
+  { id: 7,  image: '/servicos/servico7.JPG'  },
+  { id: 8,  image: '/servicos/servico8.jpg'  },
+  { id: 10, image: '/servicos/servico10.jpg' },
+  { id: 11, image: '/servicos/servico11.JPG' },
+  { id: 12, image: '/servicos/servico12.JPG' },
+  { id: 13, image: '/servicos/servico13.JPG' },
+  { id: 14, image: '/servicos/servico14.jpg' },
+  { id: 15, image: '/servicos/servico15.jpg' },
+];
 
 export function PortfolioSection() {
   const { t } = useI18n();

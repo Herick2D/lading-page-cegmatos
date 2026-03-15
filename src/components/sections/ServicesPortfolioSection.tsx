@@ -45,11 +45,11 @@ const ServiceIcons: Record<string, ReactElement> = {
 
 
 const SERVICE_IMAGE_CONFIG: Record<string, { folder: string; prefix: string; count: number; ext: string }> = {
-  projects:      { folder: "projetos",   prefix: "projeto",  count: 3, ext: "png" },
-  installations: { folder: "instalacao", prefix: "instacao", count: 8, ext: "png" },
-  maintenance:   { folder: "manutencao",   prefix: "manutencao", count: 3, ext: "jpg" },
-  consultoria:   { folder: "consultoria",   prefix: "consultoria", count: 0, ext: ""    },
-  ventilation:   { folder: "exaustao",   prefix: "exaustao", count: 4, ext: "png" },
+  projects:      { folder: "projetos",   prefix: "projeto",     count: 5, ext: "png"  },
+  installations: { folder: "instalacao", prefix: "instacao",    count: 8, ext: "png"  },
+  maintenance:   { folder: "manutencao", prefix: "manutencao",  count: 8, ext: "png"  },
+  consultoria:   { folder: "consultoria", prefix: "consultoria", count: 4, ext: "jpeg" },
+  ventilation:   { folder: "exaustao",   prefix: "exaustao",    count: 4, ext: "png"  },
 };
 
 export function ServicesPortfolioSection() {
