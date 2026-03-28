@@ -44,12 +44,44 @@ const ServiceIcons: Record<string, ReactElement> = {
 };
 
 
-const SERVICE_IMAGE_CONFIG: Record<string, { folder: string; prefix: string; count: number; ext: string }> = {
-  projects:      { folder: "projetos",   prefix: "projeto",     count: 5, ext: "png"  },
-  installations: { folder: "instalacao", prefix: "instacao",    count: 8, ext: "png"  },
-  maintenance:   { folder: "manutencao", prefix: "manutencao",  count: 8, ext: "png"  },
-  consultoria:   { folder: "consultoria", prefix: "consultoria", count: 4, ext: "jpeg" },
-  ventilation:   { folder: "exaustao",   prefix: "exaustao",    count: 4, ext: "png"  },
+const SERVICE_IMAGES: Record<string, string[]> = {
+  projects: [
+    '/servicos/projetos/projeto1.png',
+    '/servicos/projetos/projeto2.png',
+    '/servicos/projetos/projeto3.png',
+    '/servicos/projetos/projeto4.png',
+    '/servicos/projetos/projeto5.png',
+    '/servicos/projetos/projeto6.png',
+  ],
+  installations: [
+    '/servicos/instalacao/instalacao1.png',
+    '/servicos/instalacao/instalacao2.png',
+    '/servicos/instalacao/instalacao3.png',
+    '/servicos/instalacao/instalacao4.png',
+    '/servicos/instalacao/instalacao5.png',
+    '/servicos/instalacao/instalacao6.png',
+    '/servicos/instalacao/instalacao7.png',
+    '/servicos/instalacao/instalacao8.png',
+  ],
+  maintenance: [
+    '/servicos/manutencao/manutencao1.png',
+    '/servicos/manutencao/manutencao3.png',
+    '/servicos/manutencao/manutencao4.png',
+    '/servicos/manutencao/manutencao7.png',
+  ],
+  consultoria: [
+    '/servicos/consultoria/consultoria1.jpeg',
+    '/servicos/consultoria/consultoria2.jpeg',
+    '/servicos/consultoria/consultoria3.jpeg',
+    '/servicos/consultoria/consultoria4.jpeg',
+  ],
+  ventilation: [
+    '/servicos/exaustao/exaustao1.JPG',
+    '/servicos/exaustao/exaustao2.png',
+    '/servicos/exaustao/exaustao3.png',
+    '/servicos/exaustao/exaustao4.png',
+    '/servicos/exaustao/exaustao5.png',
+  ],
 };
 
 export function ServicesPortfolioSection() {
@@ -71,10 +103,7 @@ export function ServicesPortfolioSection() {
   const touchDeltaX               = useRef(0);
 
   const svcKey    = services[active].key;
-  const svcCfg    = SERVICE_IMAGE_CONFIG[svcKey] || { folder: "", prefix: "", count: 0, ext: "" };
-  const images    = Array.from({ length: svcCfg.count }, (_, i) =>
-    `/servicos/${svcCfg.folder}/${svcCfg.prefix}${i + 1}.${svcCfg.ext}`
-  );
+  const images    = SERVICE_IMAGES[svcKey] || [];
 
   const selectService = (i: number) => {
     if (i === active) return;
